@@ -33,12 +33,7 @@ void generate(int counter)
                          arr[counter] = k;
                          generate(counter+1);
 
-                     }   //continue;
-                    //else
-                    //{
-                      //  arr[counter] = k;
-                        //generate(counter+1);
-                    //}
+                     }   
                 }
             }
             else
@@ -53,16 +48,6 @@ void generate(int counter)
                         else
                             continue;
                     }
-                /*arr[n-1] = 97;
-                generate(n-1);
-                arr[n-1] = 101;
-                generate(n-1);
-                arr[n-1] = 105;
-                generate(n-1);
-                arr[n-1] = 111;
-                generate(n-1);
-                arr[n-1] = 117;
-                generate(n-1);*/
             }
 }
 int main()
