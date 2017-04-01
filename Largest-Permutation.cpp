@@ -35,7 +35,8 @@ int main()
             break;
         if(arr[i] == n-i+1)
         {
-            k++;continue;
+            k++;
+            continue;
         }
         else
         {
