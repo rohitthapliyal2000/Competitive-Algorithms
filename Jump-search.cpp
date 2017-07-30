@@ -1,17 +1,22 @@
+//CPP code for Jump search
 #include <bits/stdc++.h>
 using namespace std;
+
+int comp = 0;
 
 void lsearch(int arr[], int left, int right, int key)
 {
 	for(int i = left; i <= right; i++)
 	{
+	    comp++;
 		if(arr[i] == key)
 		{
-			cout << i+1 << endl;
+			cout << "Found" << endl;
+			cout << "Comparisons : " << comp;
 			return ;
 		}
 	}
-	cout << "Not Found 1" << endl;
+	cout << "Not Found" << endl;
 }
 
 int main()
@@ -36,12 +41,14 @@ int main()
 			{
 				i = n-1;
 			}
-			cout << "i:" << i << endl;
 			if(i < n && arr[i] <= key)
 			{
+			    comp++;
 				if(arr[i] == key)
 				{
-					cout << i+1;
+				    flag = 1;
+				    cout << "Found\n";
+				    cout << "Comparisons : " << comp;
 					break;
 				}
 				if(i == n-1)
@@ -50,22 +57,17 @@ int main()
 				}
 				save = i;
 			}
-			else if(arr[i] >= key)
+			else
 			{
+			    comp++;
 				flag = 1;
 				lsearch(arr, save, i, key);
 				break;
 			}
-			else
-			{
-				break;
-			}
-			
 		}
 		if(!flag)
 		{
-			cout << "Not Found 2" << endl;
+			cout << "Not Found" << endl;
 		}
 	}
 }
-		
