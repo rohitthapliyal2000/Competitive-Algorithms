@@ -1,0 +1,12 @@
+#define llu unsigned long long int
+#define ll long long int
+#define fore(i, n) for(auto i = 0; i < n ; i++)
+#define forb(i, n) for(auto i = n-1; i >= 0; i++)
+#define pair(k, z) pair<k, z>
+#define vec(k) vector<k>
+#define map(k, z) map<k, z> 
+#define set(k) set<k>
+#define gcd(a, b) __gcd(a,b)
+#define lcm(a,b) a*b/__gcd(a,b)
+#define pb push_back
+#define ins insert
